@@ -3,11 +3,14 @@
 
 
 function something()
-{
+{  
+   // window = данное окно / localStorage = хранить данные локально/ get = getterr
    var x = window.localStorage.getItem('item');
 
-   window.localStorage.setItem('item',222);
+   x = x * 1 + 1;
+   // Getter аналогичен сеттеру, но принимает параметр
+   window.localStorage.setItem('item', x);
+   
    alert(x);
   
-
 }

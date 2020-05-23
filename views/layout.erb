@@ -10,11 +10,9 @@
 		<script src="/vendor/jquery-1.9.1.min.js"></script>
 		<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
 		<script src="/app.js"></script> <%# подключение app.js общий файл скрипт %>
-
 	</head>
 	<body>
 		<div class="container">
-
 			<nav class="navbar navbar-default" role="navigation">
 			  <div class="navbar-header">
 			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -36,18 +34,15 @@
 			      <li><a href="/contacts">Contacts</a></li>
 			      <li><a href="/about">About</a></li>
 			    </ul>
-			  </div><!-- -->
+			  </div>
 			</nav>
-
 			<div>
 			      <%if @error && @error.length > 0 then %>
 			          <div class="alert alert-danger"><%=@error%></div>
 			      <% end %>
 			      <%= yield %>
 			</div>
-
 	</div>
 
   </body>
 </html>
-``

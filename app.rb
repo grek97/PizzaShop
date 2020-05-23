@@ -3,6 +3,17 @@
 require 'rubygems'
 require 'sinatra'
 require 'sinatra/reloader'
+require 'sinatra/activerecord'
+
+#создаем БД
+set :database, "sqlite3:pizzashop.db"
+
+#Выводим список продуктов на экран 
+class  Product < ActiverRecord::Base
+	
+end
+
+
 
 get '/' do
 #таким образом наша главная страница будет возвращать наше представление index.erb 
