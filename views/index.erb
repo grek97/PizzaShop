@@ -3,18 +3,18 @@
 
     <%# Добавление кликабельной кнопки тегом <button> %>
 
-    <button> Я голая кнопка  </button> 
+    <%# <button> Я голая кнопка  </button> 
         <br>
         <br>
     <button class="btn ">Я кнопка с классом btn</button> 
         <br>
-        <br>
+        <br> %>
 
     <%# При клике на кнопку вызывается метод something  %>
-    <button class="btn btn-primary" onclick="something()">Я с классом btn btn-primary</button> 
+    <button class="btn btn-primary" onclick="something()">Я с классом btn btn-primary + onclick</button> 
 
 
-    <%# Метод js "функция" %>
+    <%# Метод js "функция"
     <script>
       function something()
         { 
@@ -23,4 +23,4 @@
     
             alert('Я JS функция вызвана с помощью onclick="something()"');
         }
-    </script>
+    </script> %>
