@@ -8,3 +8,7 @@ get '/' do
 # get - получить данные вкладки My website эта вкладка вернет тело index.erb 
 	erb :index
 end
+
+get '/about' do 
+	erb :about
+end

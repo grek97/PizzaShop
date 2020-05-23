@@ -1,0 +1,23 @@
+<h2> вкладка about.erb</h2>
+<button class="btn btn-primary" onclick="something()"> Кнопка цветная primary </button>
+<%# 
+Данное представление нужно зарегать в app.rb,
+что бы из него обратиться к about.erb 
+get '/about' do 
+  erb :about
+end
+
++ в layout.erb уже html, для что бы отобразить на сайте 
+<li><a href="/about">About</a></li>  %> 
+
+ <%# Тег <ul> указывает на ненумерованный список <li> элементы списка %>
+ <%# ============================================================================ %>
+
+<script>
+
+  function something()
+   {
+       alert('Я функция на странице about')
+
+   }
+</script>

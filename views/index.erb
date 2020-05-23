@@ -1,27 +1,26 @@
-<h2> Представление index.erb для вкладки my website
-домашняя старница </h2>
-<h2> Welcome to Pizza Shop</h2>
+<h2> Представление index.erb для вкладки my website домашняя старница </h2>
+    <h2> Welcome to Pizza Shop</h2>
 
-<%# Добавление кликабельной кнопки тегом <button> %>
+    <%# Добавление кликабельной кнопки тегом <button> %>
 
-<button> Я голая кнопка  </button> 
-<br>
-<br>
-<button class="btn ">Я кнопка с классом btn</button> 
-<br>
-<br>
+    <button> Я голая кнопка  </button> 
+        <br>
+        <br>
+    <button class="btn ">Я кнопка с классом btn</button> 
+        <br>
+        <br>
 
-<%# При клике на кнопку вызывается метод something  %>
-<button class="btn btn-primary" onclick="something()">Я с классом btn btn-primary</button> 
+    <%# При клике на кнопку вызывается метод something  %>
+    <button class="btn btn-primary" onclick="something()">Я с классом btn btn-primary</button> 
 
 
-<%# Метод js "функция" %>
-<script>
-  function something()
-  { 
-// Тело метода js
-    //   В js функция вызывается хендлеру - обработчик, по событию
-
-      alert('Я JS функция вызвана с помощью onclick="something()"');
-  }
-</script>
+    <%# Метод js "функция" %>
+    <script>
+      function something()
+        { 
+            // Тело метода js
+            //  В js функция вызывается хендлеру - обработчик, по событию
+    
+            alert('Я JS функция вызвана с помощью onclick="something()"');
+        }
+    </script>
