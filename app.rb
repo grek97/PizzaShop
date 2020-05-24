@@ -6,21 +6,16 @@ require 'sinatra/reloader'
 require 'sinatra/activerecord'
 
 #создаем БД
-set :database, "sqlite3:pizzashop.db"
 
 #Выводим список продуктов на экран 
-class  Product < ActiverRecord::Base
-	
-end
 
 
-
-get '/' do
+get '/' do      # контроллер 
 #таким образом наша главная страница будет возвращать наше представление index.erb 
 # get - получить данные вкладки My website эта вкладка вернет тело index.erb 
 	erb :index
 end
 
-get '/about' do 
+get '/about' do # контроллер 
 	erb :about
 end

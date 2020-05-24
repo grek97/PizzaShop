@@ -1,5 +1,11 @@
 source "https://rubygems.org"
 
 gem "sinatra"
-gem "rack-protection", ">= 1.5.5"
-gem "rack", ">= 1.6.12"
+gem "sqlite3"
+gem "activerecord"
+gem "sinatra-activerecord"
+gem "sinatra-contrib"
+
+group :development do
+    gem "tux"
+end

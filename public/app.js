@@ -2,14 +2,15 @@
 // Клиентская часть
 
 
-function something()
+function something() // функция для onclick
 {  
-   // window = данное окно / localStorage = хранить данные локально/ get = getterr
-   var x = window.localStorage.getItem('item');
+   // window = опеределенное окно в нашем случае index || about 
+   // localStorage = для хранения данных локально
+   // get = getterr
+   var x = window.localStorage.getItem('item'); // получение данных
 
    x = x * 1 + 1;
-   // Getter аналогичен сеттеру, но принимает параметр
-   window.localStorage.setItem('item', x);
+   window.localStorage.setItem('item', x);  // ключ значение / отправка данных
    
    alert(x);
   
