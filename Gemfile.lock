@@ -41,7 +41,7 @@ GEM
       rack-protection (= 2.0.8.1)
       tilt (~> 2.0)
     sinatra-activerecord (2.0.18)
-      activerecord (6.0.3.1)
+      activerecord (>= 4.1)
       sinatra (>= 1.0)
     sinatra-contrib (2.0.8.1)
       backports (>= 2.8.2)
@@ -63,7 +63,7 @@ GEM
     zeitwerk (2.3.0)
 
 PLATFORMS
-  ruby
+  rubyf
   x64-mingw32
 
 DEPENDENCIES

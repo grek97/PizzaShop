@@ -8,7 +8,10 @@ require 'sinatra/activerecord'
 #создаем БД
 
 #Выводим список продуктов на экран 
+set :database, "sqlite3:pizzashop.db"
 
+class Product < ActiveRecord::Base
+end
 
 get '/' do      # контроллер 
 #таким образом наша главная страница будет возвращать наше представление index.erb 
